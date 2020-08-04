@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f4f6f7;
+}
+
+.fix{
+    clear: both;
+}
+
+form{
+    width: 500px;
+    margin: 1rem auto;
+    background-color: #f5f5f5;
+    padding: 1% 2%;
+    box-shadow: 0 1px 2px rgb(153, 153, 153);
+    border-radius: 5px;
+}
+
+#signup-form, #signin-form{
+    margin-top: 3rem;
+    width: 400px;
+}
+
+h2{
+    margin: 1rem auto 2rem;
+    width: fit-content;
+    font-family: helvetica;
+    /*text-shadow: 0 2px 0 #e4be00;*/
+    position: relative;
+    z-index: 1;
+    color: #222f3e;
+    font-size: 28px;
+}
+
+.h2-table{
+    margin: 2rem auto;
+    font-size: 30px;
+}
+
+h2::before{
+    content: '';
+    background: #1e9cd6f8;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 5px;
+    transform: scaley(1);
+    z-index: -1;
+}
+
+.input-field{
+    width: 100%;
+    background: #eaeaea;
+    margin: 0.5rem 0;
+    border-radius: 3px;
+    height: 50px;
+    position: relative;
+}
+
+.input-field input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    padding: 6px 25px 2px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: consolas;
+    background: none;
+    z-index: 2;
+    color: #222f3e;
+}
+
+.input-field label{
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    z-index: 1;
+    transition: 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+    opacity: 0.5;
+    color: #222f3e;
+    top: 3px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.input-field label.normal{
+    top: 15px;
+    left: 25px;
+    font-size: 16px;    
+}
+
+.input-field span{
+    background: #22a0da3a;
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+
+.input-field input:focus, select:focus{
+    outline: none;
+}
+
+.input-field input:focus + label{
+    top: 3px;
+    left: 10px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+
+.input-field input:valid + label{
+    top: 3px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.input-field input:focus ~ span{
+    background: #1e9cd6f8;
+} 
+
+.price-field{
+    width: 245px;
+    float: left;
+}
+
+form .input-field:nth-child(6){
+    margin-right: 10px;
+}
+
+form.edit-form .input-field:nth-child(7){
+    margin-right: 10px;
+}
+
+
+.select{
+    width: 153px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.select-day, .tselect-day{
+    margin-right: 0;
+}
+
+.select select{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background: none;
+    border: none;
+    bottom: 0;
+    padding: 7px 25px 2px;
+    transition: 0.3s ease;
+    font-size: 16px;
+    display: block;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: consolas;
+    color: #222f3e;
+    box-shadow: 0px 1px 1px #4e5c6b69;
+}
+
+.select select option{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.select select:focus + label{
+    top: 3px;
+    left: 10px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.select select:valid + label{
+    top: 3px;
+    left: 10px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+
+.input-field select:focus ~ span{
+    background: #1e9cd6f8;
+} 
+
+button{
+    background: #4e5c6b;
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 3px;
+    height: 45px;
+    display: block;
+    margin: 1rem 0rem 1rem 1rem;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+button:hover{
+    background: #1a405a;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+h4{
+    margin: 5px 0;
+    width: fit-content;
+    font-family: helvetica;
+    /*text-shadow: 0 2px 0 #e4be00;*/
+    position: relative;
+    z-index: 1;
+    color: #222f3e;
+}
+
+
+h4::before{
+    content: '';
+    background: #1e9cd6f8;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaley(1);
+    z-index: -1;
+}
+
+
+
+/* .upload input{
+    bottom: 0px;
+    height: 70%;
+} */
+
+table{
+    width: 90%;
+    box-shadow: 0 1px 2px #1a405a;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 2% auto;
+    border-radius: 3px;
+    border-collapse:collapse;
+}
+
+table tr td{
+    margin: 0;
+    padding: 10px;
+    /* border-bottom: 2px solid #1a405a; */
+    box-sizing: border-box;
+    margin: 0 -10px;
+    background: #f4f6f7;
+}
+
+table tr:nth-child(2n+1) td{
+  background: #e8e8ec;
+}
+table tr:nth-child(1) td{
+    border: 2px solid #1a405a;
+    margin: -2px;
+    box-sizing: border-box;
+    color: #bcdcff;
+    background: rgba(78, 92, 107, 0.8);
+}
+
+table tr{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 -10px;
+}
+
+table tr td:nth-child(1){
+    min-width: 140px;
+    font-size: 14px;
+}
+
+table a{
+    color: red;
+}
+
+
+/*select{
+    width: 10%;
+    height: 2.2rem;
+    box-shadow: 0px 1px 2px #4e5c6b;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    background-color: #f7f7f7;
+    transition: 0.3s;
+}*/
+
+.product-select{
+  width: 78%;
+  margin: 10px 0;
+}
+
+option{
+    font-size: 14px;
+}
+
+form.search{
+    width: 90%;
+}
+
+.search input{
+    width: 65%;
+    margin: 0 1%;
+}
+
+.search label{
+    width: 10%;
+}
+
+.search button{
+    float: none;
+    display: inline-block;
+    height: 2.3rem;
+    margin: 0 1%;
+}
+
+.margin{
+    margin-right: 5%;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.margina{
+    margin-right: 0px;
+}
+
+.back{
+    float: right;
+    margin-top: -10px;
+}

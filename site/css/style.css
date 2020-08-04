@@ -1,0 +1,1369 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap&subset=arabic,latin-ext');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #f2f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.fix{
+    clear: both;
+    margin: 0; 
+}
+
+main{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 0 !important;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* -------- Start Section --------- */
+
+.section{
+    background: #ffc200;
+    padding: 0 5px;
+}
+
+.section p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.section a{
+    text-decoration: underline;
+    color: #0e61c8;
+    font-weight: bold;
+}
+
+.section button{
+    border: none;
+    color: #ffc200;
+    background-color: #231f20;
+    padding: 8px 10px;
+    margin: 0 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* -------- End Section --------- */
+
+/* -------- Start header -------- */
+
+header{
+    /* display: flex; */
+    height: 90px;
+    background: white;
+    width: 100%;
+    /* max-width: 1140px; */
+    box-sizing: border-box;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+header .logo{
+    /* background: white; */
+    width: 190px;
+    height: 89px;
+}
+
+header .logo img{
+    width: 180px;
+    height: 100%;
+    position: cover;
+}
+
+header input{
+    /* width: 45%;
+    background: white;
+    border: none;
+    font-size: 18px;
+    padding: 35px;
+    font-family: 'Roboto', sans-serif;
+    border-left: 1px solid rgba(177, 177, 177, 0.685); */
+    position: absolute;
+    top: 89px;
+    left: 0;
+    border: none;
+    border-top: 1px solid rgba(177, 177, 177, 0.685);
+    width: 100%;
+    height: 45px;
+    padding: 8px 20px;
+    display: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    overflow: hidden;
+    z-index: -2;
+}
+
+header button{
+    width: 65px;
+    height: 100%;
+    background: none;
+    border: none;
+    border-left: 1px solid rgba(177, 177, 177, 0.685);
+    float: right;
+    font-size: 24px;
+    color: #6d6e71;
+    cursor: pointer;
+}
+
+#search, #menu-phone{
+    float: right;
+}
+
+#search-btn{
+    color: #ffc200;
+}
+
+.phone-menu{
+    /* display: block; */
+    position: absolute;
+    top: 89px;
+    width: 100%;
+    padding: 0 25px 25px;
+    background-color: #f2f3f3;
+    box-sizing: border-box;
+    /* display: none; */
+    visibility: hidden;
+    max-height: 9vh;
+    overflow: scroll;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.menu{
+    background: #ffc200;
+    color: #f2f3f3;
+}
+
+header ul{
+    list-style: none;
+    height: 85px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    /* background: white; */
+    border-bottom: 1px solid black;
+}
+
+header ul li{
+    width: 25%;
+    height: 100%;
+    /* border-left: 1px solid rgba(177, 177, 177, 0.685); */
+    float: left;
+    position: relative;
+}
+
+header ul li:nth-child(5){
+    display: none;
+}
+
+header ul li a{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #6d6e71;
+    text-align: center;
+}
+
+header li button{
+    /* font-size: 24px; */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #6d6e71;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header ul li button.menu{
+    background: #ffc200;
+    color: #FFF;
+}
+
+header ul li a::before, header ul li a::after{
+    clear: both;
+}
+
+/* 
+header ul li a:hover, header button:hover{
+    background: #f2f3f3;
+} */
+
+header ul li a.menu:hover{
+    background: #ffc200;
+    color: #FFF;
+}
+
+header ul li:nth-child(1) a{
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* -------- Start Nav Menu --------- */
+
+.nav-menu{
+    width: 100%;
+    /* width: 1140px; */
+    /* background: #f2f3f3; */
+    /* top: 90px; */
+    /* position: absolute; */
+    /* right: -1px; */
+    /* min-height: 550px; */
+    /* z-index: -1; */
+    /* padding: 30px 120px 0; */
+    box-sizing: border-box;
+    /* visibility: hidden; */
+    /* transform: translateY(-30px); */
+    transition: 0.5s ease;
+}
+
+.nav-menu div{
+    /* float: left; */
+    /* width: 44%; */
+    /* margin-left: 50px;  */
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+.nav-menu p{
+    color: #6d6e71;
+    font-size: 18px;
+    display: none;
+}
+
+.nav-menu a{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    color: black;
+    margin-bottom: 28px;
+}
+
+.nav-menu p{
+    margin-top: 0;
+}
+
+.nav-menu h1{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.nav-menu h1 i{
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.nav-menu .show{
+    margin: 10px 0;
+    color: black;
+    display: block;
+}
+
+.nav-menu a:hover{
+    color:#6d6e71;
+}
+
+/* -------- End Nav Menu --------- */
+
+/* -------- End header -------- */
+
+/* -------- Start Slider -------- */
+
+.slider{
+    width: 100%;
+    padding: 0;
+    /* height: 570px; */
+    min-height: 530px;
+    margin: 0 auto 5px;
+    position: relative;
+}
+
+.myslides{
+    visibility: hidden;
+    transition: 0.5s;
+    position: absolute;
+    top: 0%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.details{
+    /* position: absolute; */
+    /* bottom: 2px; */
+    /* left: 10%; */
+    /* width: 30%; */
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    text-transform: uppercase;
+}
+
+.details .date, .details .info{
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin: 0;
+    border-bottom: 2px solid #ffc200;
+}
+
+.details .date{
+    background: #231f20;
+}
+
+.details .date .from{
+    float: left;
+    margin-right: 25px;
+    width: 44%;
+}
+
+.details .date .to{
+    float: left;
+    width: 44%;
+}
+
+.details .info{
+    /* height: 160px; */
+    background-image: linear-gradient(#231f20, #231f20, #231f20e5) 
+}
+
+.details .date .to p:nth-child(1), .details .date .from p:nth-child(1), .details .info p:nth-child(1){
+    font-size: 10px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.details .date .to p:nth-child(2), .details .date .from p:nth-child(2){
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.details .info p:nth-child(2){
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.buy{
+    width: 100%;
+    height: 60px;
+    background: #231f20;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #ffc200;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.buy i{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.buy:hover{
+    color: #231f20;
+    background: #ffc200;
+}
+
+/* -------- End Slider -------- */
+
+/* -------- Start Today's Plans --------- */
+
+.plans{
+    width: 100%; 
+    margin: 0px auto 50px;
+    text-align: center;
+}
+
+.plans h1, p{
+    width: fit-content;
+    /* margin: 15px auto; */
+    margin: 5px auto;
+    /* letter-spacing: 1.2px; */
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.plans p{
+    font-size: 16px;
+}
+
+.plans a{
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+    width: fit-content; 
+}
+
+.plans img{
+    margin: 25px 0;
+    width: 100%;
+}   
+
+.book{
+    /* width: 18%; */
+    width: 80%;
+    /* margin: 3% 1.5%; */
+    margin: 30px auto;
+    /* display: inline-block; */
+    position: relative;
+}
+
+.book .head{
+    /* height: 50px; */
+    background: #f2f3f3;
+    /* font-size: 20px; */
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    margin: 0;
+    max-height: 72px;
+    /* padding: 10px 5px 10px 10px; */
+    padding: 25px 5px;
+    box-sizing: border-box;
+}
+
+.book img{
+    width: 100%;
+    margin: 0;
+    max-height: 30vh;
+    margin-bottom: -5px;
+    border-bottom: 5px solid #ffc200;
+}
+
+.book .buy{
+    font-weight: normal
+}
+
+.book span{
+    background: #ffc200;
+    color: black;
+    /* height: 144px; */
+    height: 100%;
+    max-height: 31vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s ease;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.book:hover span{
+    opacity: 1;
+}
+
+.plans .show-me, .show-me{
+    font-size: 16px;
+    color: #6d6e71;
+    width: fit-content;
+    margin: 15px 0;
+}
+
+.show-me:hover{
+    text-decoration: underline; 
+}
+
+
+/* -------- Start Today's Plans --------- */
+
+
+/* -------- Start Events --------- */
+
+.events{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.events div{
+    margin-bottom: 50px;
+}
+
+.events .left-events{
+    /* width: 65%; */
+    width: 100%;
+    background: #e7e7e8;
+    /* float: left; */
+    box-sizing: border-box;
+    padding: 40px 5%;
+    margin: 0;
+}
+
+.events h1{
+    font-size: 20px;
+    margin: 0;
+}
+
+.events p{
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.events .book{
+    /* width: 138px; */
+    width: 46%;
+    margin: 4% 2%;
+    float: left;
+    /* max-height: 23vh; */
+    overflow-y: hidden;
+}
+
+.events .book img{
+    max-height: 18vh;
+}
+
+.events .book .head{
+    background: #d3d3d3;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    padding: 7px 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: black;
+    text-align: left;
+    min-height: 45px;
+    max-height: 45px;
+}
+
+.events .book span{
+    top:0;
+    /* height: 100px; */
+    height: 71%;
+    max-height: 135px;
+    font-size: 14px;    
+    padding: 10px;
+    text-align: left;
+}
+
+.events .book span:focus{
+    outline: none;
+}
+
+.events .right-events{
+    /* width: 35%; */
+    width: 100%;
+    /* float: left; */
+    background: #f2f3f3;
+    box-sizing: border-box;
+    /* padding: 5px 5px 30px; */
+    padding: 40px 5%;
+    margin: 0;
+}
+
+
+/* -------- End Events --------- */
+
+/* -------- Start Footer --------- */
+
+footer{
+    border-top: 5px solid #fff;
+}
+
+footer div:nth-child(1){
+    padding: 40px 10px;
+    background: #e7e7e8
+}
+
+footer div:nth-child(1) img{
+    /* float: left; */
+    width: 40%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+footer div:nth-child(1) ul{
+    list-style: none;
+    float: left;
+    margin: 20px 10px 20px 0;
+}
+
+footer ul li{
+    margin: 5px 0;
+}
+
+footer ul li a{
+    color: #b1b2b4;
+    font-size: 16px;
+}
+
+footer ul li a:hover{
+    color: black;
+}
+
+footer div:nth-child(1) div {
+    /* float: left; */
+    /* margin: 5px 15px; */
+    clear: both;
+    width: fit-content;
+    margin: 35px auto 0;
+}
+
+footer div:nth-child(1) div p{
+    font-size: 14px;
+    color: #b1b2b4;
+    margin: 2px 0; 
+}
+
+footer div:nth-child(2){
+    background: #231f20;
+    padding: 5px 0;
+}
+
+footer div:nth-child(2) p{
+    /* float: left; */
+    color: #6d6e72;
+    font-size: 14px;
+    margin: 15px 10px;
+}
+
+footer div:nth-child(2) button{
+    /* float: right; */
+    width: 60%;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer div:nth-child(2) .a{
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid #6d6e728f;
+    border-left: 1px solid #6d6e7291;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: #6d6e72;
+}
+
+footer div:nth-child(2) p a{
+    color: #6d6e72;
+}
+
+/* -------- End Footer --------- */
+
+/* -------- Start Tickets ------- */
+
+.tickets{
+    /* width: 1100px; */
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tickets .head{
+    background: #f2f3f3;
+    /* padding: 0 30px; */
+    padding: 10px;
+}
+
+.tickets .head h1{
+    float: left;
+    font-size: 22px;
+}
+
+.tickets .head a{
+    float: right;
+    font-size: 24px;
+    color: #ffc200;
+    /* margin-top: 25px; */
+    margin-top: 10px;
+}
+
+.tickets .info{
+    border-bottom: 1px solid #b1b2b4;
+    /* height: 200px; */
+    height: fit-content;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px; 
+}
+
+.tickets .info .left-img{
+    /* float: left; */
+    /* width: 25%; */
+    width: 100%;
+    border: 1px solid #dedfe4;
+    position: relative;
+}
+
+.tickets .info .left-img img{
+    width: 100%;
+}
+
+.tickets .info .left-img div{
+    background: black;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.tickets .info .center{
+    /* width: 50%; */
+    width: 100%;
+    float: left;
+    /* height: 200px; */
+    /* margin-left: 20px; */
+    /* padding: 0; */
+    padding: 0 10px;
+    background: #f2f3f3;
+}
+
+.tickets .info .center p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #6d6e71;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+.tickets .info .center h2{
+    font-weight: normal;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tickets .info .center .b{
+    font-weight: bold;
+}
+
+.tickets .info .center .center-left, .tickets .info .center .center-right{
+    float: left;
+    width: 42.5%;
+    text-align: left;
+    margin-right: 15%;
+}
+
+.tickets .info .center .center-right{
+    margin-right: 0;
+}
+
+.tickets .info .center .center-left div, .tickets .info .center .center-right div{
+    text-align: left;
+    margin: 50px 0 30px;
+}
+
+.tickets .info .center .center-left div:nth-child(1), .tickets .info .center .center-right div:nth-child(1){
+    /* margin: 10px 0; */
+    margin: 30px 0;
+}
+
+.tickets .info .button{
+    /* width: 25%; */
+    width: 100%;
+    font-weight: normal;
+    float: right;
+    /* margin-top: -60px; */
+}
+
+/* -------- Start Tickets ------- */
+
+@media only screen and (min-width: 768px){
+    
+    /* -------- Start Section --------- */
+
+    .section p{
+        font-size: 16px;
+    }
+
+    /* -------- End Section --------- */
+
+    header{
+        display: flex;
+    }
+    header .logo{
+        background: white;
+        width: 205px;
+        z-index: 5;
+    }
+    
+    header .logo img{
+        width: 100%;
+    }
+
+    header input{
+        width: calc(100% - 596px);
+        background: white;
+        border: none;
+        font-size: 18px;
+        padding: 0 0 0 35px;
+        border-left: 1px solid rgba(177, 177, 177, 0.685);
+        position: static;
+        height: 100%;
+        display: inline-block;
+        box-sizing: unset;
+        z-index: 5;
+    }
+
+    header button{
+        width: 0;
+    }
+        
+    #search-btn, #menu-phone{
+        display: none;
+    }
+    
+    .phone-menu{
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: inherit;
+        visibility: visible;
+        max-height: fit-content;
+        overflow: initial;
+        margin-right: 0;
+        z-index: 2;
+    }
+
+    header ul{
+        width: fit-content;
+        float: right;
+        z-index: 3;
+        height: 89px;
+        background: white;
+        border-bottom: none;
+        margin-right: 0;
+    }
+    
+    header ul li{
+        width: 70px;
+        margin-right: 0;
+        border-left: 1px solid rgba(177, 177, 177, 0.685);
+    }
+    
+    header ul li:nth-child(5){
+        display: inline-block;
+        margin-right: 0;
+    }
+    
+    header ul li a{
+        font-size: 28px;
+    }
+        
+    header ul li a:hover, header button:hover{
+        background: #f2f3f3;
+    }
+    
+    header ul li:nth-child(1) a{
+        font-size: 18px;
+    }
+
+    /* -------- Start Nav Menu --------- */
+    
+    .nav-menu{
+        width: 100%;
+        background: #f2f3f3; 
+        top: 89px; 
+        position: absolute; 
+        right: 0px;
+        min-height: 550px; 
+        z-index: -2;
+        padding: 0;
+        box-sizing: border-box;
+        visibility: hidden; 
+        transform: translateY(-30px); 
+        transition: 0.5s ease;
+    }
+    
+    .nav-menu div{
+        float: left;
+        width: 30%;
+        margin-left: 15%;
+        border-bottom: none;
+    }
+    
+    .nav-menu p{
+        color: #6d6e71;
+        font-size: 18px;
+        display: block;
+        margin-left: 0;
+    }
+    
+    .nav-menu a{
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        color: black;
+        margin-bottom: 32px;
+    }
+    
+    .nav-menu h1{
+        font-size: 34px;
+        font-weight: normal;
+        margin-bottom: 0px;
+    }
+    
+    .nav-menu h1 i{
+        font-size: 32px;
+        margin-right: 5px;
+    }
+
+    /* -------- End Nav Menu --------- */
+    
+    /* -------- End header -------- */
+    
+    /* -------- Start Slider -------- */
+    
+    .slider{
+        height: 420px;
+        min-height: 0px;
+    }
+    
+    .details{
+        position: absolute; 
+        bottom: 2px; 
+        left: 10%; 
+        width: 38%;
+        box-sizing: border-box;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .details .date, .details .info{
+        padding: 5px 30px;
+    }
+
+    .details .date .from{
+        margin-right: 12%;
+    }
+    
+    .details .date .to p:nth-child(1), .details .date .from p:nth-child(1), .details .info p:nth-child(1){
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    
+    .details .date .to p:nth-child(2), .details .date .from p:nth-child(2){
+        font-size: 22px;
+    }
+    
+    .details .info p:nth-child(2){
+        font-size: 24px;
+    }  
+
+    /* -------- End Slider -------- */
+
+    /* -------- Start Today's Plans --------- */
+
+    .plans{
+        margin: 0;
+    }
+
+    .plans h1, p{
+        margin: 10px auto;
+        letter-spacing: 1.2px;
+        font-size: 28px;
+    }
+
+    .plans p{
+        font-size: 18px;
+    }
+
+    .plans img{
+        margin: 25px 0;
+        width: 100%;
+    }   
+
+    .book{
+        width: 36%;
+        margin: 3% 3%;
+        display: inline-block;
+    }
+
+    .book .head{
+        height: 50px;
+        font-size: 20px;
+        letter-spacing: 1.1px;
+        max-height: 72px;
+        padding: 10px 5px 10px 10px;
+        box-sizing: unset;
+    }
+
+    .book img{
+        margin: 0;
+        max-height: unset;
+        margin-bottom: -5px;
+    }
+    
+    .book .buy{
+        font-weight: bold;
+    }
+    
+    .book span{
+        height: 20vh;
+    }
+    
+    .plans .show-me, .show-me{
+        margin: 20px 0;
+    }    
+    
+    /* -------- Start Today's Plans --------- */
+    
+    
+    /* -------- Start Events --------- */
+    
+    .events .left-events{
+        padding: 40px 8%;
+    }
+    
+    .events h1{
+        font-size: 32px;
+    }
+    
+    .events p{
+        font-size: 18px;
+    }
+    
+    .events .book{
+        width: 135px;
+    }
+    
+    .events .book img{
+        max-height: unset;
+    }
+    
+    .events .book .head{
+        min-height: 46px;
+        max-height: 46px;
+    }
+    
+    .events .right-events{
+        padding: 40px 8%;
+    }
+    
+    
+    /* -------- End Events --------- */
+    
+
+    /* -------- Start Footer --------- */
+
+    footer div:nth-child(1){
+        padding: 40px 10px;
+        background: #e7e7e8
+    }
+
+    footer div:nth-child(1) img{
+        float: left;
+        width: 20%;
+        display: block;
+        margin: 20px 0 20px 20px;
+    }
+
+    footer div:nth-child(1) ul{
+        list-style: none;
+        float: left;
+        margin: 20px 0px 20px 0;
+    }
+
+    footer div:nth-child(1) div {
+        float: left;
+        margin: 35px;
+        clear: none;
+    }
+
+    footer div:nth-child(1) div p{
+        font-size: 16px;
+        color: #b1b2b4;
+        margin: 2px 0; 
+    }
+
+    footer div:nth-child(2){
+        background: #231f20;
+        padding: 5px 0;
+    }
+
+    footer div:nth-child(2) p{
+        font-size: 16px;
+    }
+
+    footer div:nth-child(2) button{
+        font-size: 16px;
+    }
+
+    footer div:nth-child(2) .a{
+        width: 80px;
+    }
+
+    /* -------- End Footer --------- */
+
+    /* -------- Start Tickets ------- */
+
+    .tickets .head{
+        padding: 0 30px;
+    }
+
+    .tickets .head h1{
+        font-size: 32px;
+    }
+
+    .tickets .head a{
+        margin-top: 25px;
+    }
+
+    .tickets .info{
+        width: 100%;
+        margin-top: 30px; 
+    }
+
+    .tickets .info .left-img{
+        float: left;
+        width: 25%;
+        min-height: 230px;
+    }
+
+    .tickets .info .left-img div{
+        background: black;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        color: white;
+    }
+
+    .tickets .info .center{
+        width: 50%;
+        float: left;
+        /* height: 200px; */
+        margin-left: 20px;
+        padding: 0;
+        background: none;
+    }
+
+    .tickets .info .center .center-left div, .tickets .info .center .center-right div{
+        margin: 50px 0;
+    }
+
+    .tickets .info .center .center-left div:nth-child(1), .tickets .info .center .center-right div:nth-child(1){
+        margin: 10px 0;
+    }
+
+    .tickets .info .button{
+        width: 25%;
+        font-weight: normal;
+        float: right;
+        margin-top: -60px;
+    }
+
+    /* -------- Start Tickets ------- */
+
+    
+        
+}
+
+@media only screen and (min-width: 1024px){
+    
+    /* -------- Start Slider -------- */
+    .slider{
+        height: 520px;
+    }
+
+    .details .date, .details .info{
+        width: 100%;
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+
+    .details .info{
+        min-height: 150px;
+        background-image: linear-gradient(#231f20, #231f20, #231f20e5) 
+    }
+
+    .details .date{
+        background: #231f20;
+    }
+
+    .details .date .from{
+        float: left;
+        margin-right: 25px;
+        width: 44%;
+    }
+
+    .details .date .to{
+        float: left;
+        width: 44%;
+    }
+
+    .details .date .to p:nth-child(1), .details .date .from p:nth-child(1), .details .info p:nth-child(1){
+        font-size: 12px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .details .date .to p:nth-child(2), .details .date .from p:nth-child(2){
+        font-size: 24px;
+        margin: 10px 0 5px;
+    }
+
+    .details .info p:nth-child(2){
+        font-size: 26px;
+        margin: 10px 0 5px;
+    }
+
+    /* -------- End Slider -------- */
+
+    /* -------- Start Today's Plans --------- */
+
+    .plans{
+        margin-top: 25px;
+    }
+
+    .plans h1, p{
+        font-size: 34px;
+    }
+
+    .plans p{
+        font-size: 20px;
+    }
+
+    .book{
+        width: 18%;
+        margin: 3% 1.5%;
+    }
+
+    .book .head{
+        font-size: 18px;
+    }
+    
+    .book span{
+        height: 130px;
+        font-size: 16px;
+    }
+    
+    /* -------- Start Today's Plans --------- */
+    
+    
+    /* -------- Start Events --------- */
+    
+    .events .book{
+        width: 20%;
+    }
+    
+    
+    /* -------- End Events --------- */
+    
+
+    /* -------- Start Footer --------- */
+
+    footer div:nth-child(1){
+        padding: 40px 50px;
+    }
+
+    footer div:nth-child(2) p{
+        margin-top: 25px;
+        float: left;
+    }
+
+    footer div:nth-child(2) button{
+        float: right;
+        width: 35%;
+    }
+
+    footer div:nth-child(2) .a{
+        float: right;
+    }
+
+    /* -------- End Footer --------- */
+
+
+}
+
+@media only screen and (min-width: 1200px){
+    
+    /* -------- Start Slider -------- */
+    .slider{
+        height: 570px;
+    }
+    /* -------- End Slider -------- */
+
+    /* -------- Start Today's Plans --------- */
+
+    .book span{
+        height: 145px;
+        font-size: 16px;
+    }
+    
+    /* -------- Start Today's Plans --------- */
+    
+    
+    /* -------- Start Events --------- */
+    
+
+    .events .right-events{
+        width: 35%;
+        float: left;
+        padding: 40px;
+    }
+
+    .events .left-events{
+        width: 65%;
+        float: left;
+        padding: 40px;
+    }
+
+    .events .book{
+        width: 138px;
+        margin: 4% 2%;
+        float: left;
+    }
+    
+    
+    /* -------- End Events --------- */
+    
+    footer div:nth-child(2){
+        padding: 0;
+    }
+
+    footer div:nth-child(1) img{
+        width: fit-content;
+    }
+
+
+
+}
