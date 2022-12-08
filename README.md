@@ -2,7 +2,7 @@
 My version of <a href="https://www.ticketsmarche.com/" target="_blank">Tickets Marche</a>, I build it for education purpose only.
 
 ## Link
-- <a href="http://ticketsmarchedemo.rf.gd/" target="_blank">Sanagel-club</a>
+- <a href="http://ticketsmarchedemo.rf.gd/" target="_blank">Tickets Marche</a>
 
 ## Pages
 - Home
